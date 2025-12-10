@@ -12,6 +12,7 @@ class FunctionDevelopment {
         for (int i = 0; i < progresses.length; i++) {
             int remain = 100 - progresses[i];
             double days = (double) remain / speeds[i];
+            // 여기서 더블로 캐스팅 이유는 소수점을 살리기 위함
             queSub[i] = (int) Math.ceil(days);
         }
         int days = queSub[0];
@@ -24,6 +25,7 @@ class FunctionDevelopment {
                 que.offer(count);
                 count = 1;
                 days = queSub[i];
+                // 여기서 days를 갱신 안하면 이전 반장이 계속 비교대상이 됨
             }
         }
         que.offer(count);
