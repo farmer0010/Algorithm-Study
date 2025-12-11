@@ -9,6 +9,24 @@
 
 ---
 
+### Day 4 (2025.12.11) - 해시 (Hash)
+
+오늘은 데이터를 **Key-Value** 쌍으로 저장하여 검색 속도를 O(1)로 최적화하는 **해시(Hash)** 알고리즘을 집중 공략했다.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.1 | **[완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576)** | [Link](./Day4/DidNotFinish.java) | `HashMap` <br> 참가자(+1), 완주자(-1) 카운팅. 0이 아닌 사람 찾기. |
+| Lv.1 | **[추억 점수](https://school.programmers.co.kr/learn/courses/30/lessons/176963)** | [Link](./Day4/MemoryScore.java) | `Map Lookup` <br> 이름-점수 매핑. 이중 for문에서 `map.get`으로 점수 합산. |
+| Lv.2 | **[의상](https://school.programmers.co.kr/learn/courses/30/lessons/42578)** | [Link](./Day4/Clothes.java) | `Map.values()` <br> 종류별 개수 세기. `(A+1)*(B+1)...-1` 공식 적용. |
+| Lv.1 | **[성격 유형 검사하기](https://school.programmers.co.kr/learn/courses/30/lessons/118666)** | [Link](./Day4/PersonalityTest.java) | `Kakao Tech` <br> 선택지에 따른 점수 배분(비동의/동의). 지표별 점수 비교 및 사전순 정렬. |
+
+#### 💡 Today I Learned (TIL)
+1. **빈도수 세기 공식:** `map.put(key, map.getOrDefault(key, 0) + 1);` 은 해시 문제의 알파이자 오메가다.
+2. **Key가 필요 없을 때:** 맵의 모든 값을 계산해야 할 때는 `map.values()`를 사용하면 편하다.
+3. **Map을 쓰는 이유:** 배열은 인덱스(숫자)로만 찾을 수 있지만, Map은 이름(String) 등 어떤 키로든 O(1)로 찾을 수 있다.
+
+---
+
 ### Day 3 (2025.12.10) - 정렬 (Sorting)
 
 오늘은 데이터를 순서대로 나열하여 효율적으로 처리하는 **정렬(Sorting)** 알고리즘을 연습했다.
