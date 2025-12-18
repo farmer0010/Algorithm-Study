@@ -9,6 +9,20 @@
 
 ---
 
+### Day 6 (2025.12.18) - 스택/큐 심화 (Stack & Queue Deep Dive)
+
+이전에 풀었던 문제들을 다시 점검하며, `Stack` 클래스 대신 `ArrayDeque`를 적용하고 로직의 오류(Concurrent Modification)를 개선하는 데 집중했다.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909)** | [Link](./Day6/Programmers_12909_올바른괄호.java) | `ArrayDeque` <br> `Integer` 인덱스가 아닌 `Character` 값을 담아 직관성 확보. 불필요한 `push` 방지. |
+| Lv.2 | **[기능개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586)** | [Link](./Day6/Programmers_42586_기능개발.java) | `ArrayList` + `Greedy` <br> 큐의 크기가 변하는 루프(`poll`)의 위험성 해결. 기준값(`maxDay`) 갱신 로직. |
+
+#### 💡 Today I Learned (TIL)
+1. **자료형의 중요성:** 스택에 인덱스(int)를 넣고 문자(char)와 비교하는 실수를 주의하자. (제네릭 타입 확인 필수)
+2. **동적 배열 루프의 함정:** `for (i < list.size())` 내부에서 `remove`나 `poll`을 수행하면 전체 크기가 줄어들어 루프가 조기에 종료되거나 인덱스가 꼬인다.
+3. **로직의 단순화:** 무조건 큐를 고집하기보다, `Greedy`하게 기준값(max)을 갱신하며 리스트에 담는 것이 더 효율적일 때가 있다.
+
 ### Day 5 (2025.12.17) - 해시 (Hash) 복습 & 재활
 
 오랜만의 알고리즘 복습. Map을 활용해 조회 속도를 높이고, 인덱스를 기억하는 기술을 익혔다.
