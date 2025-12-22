@@ -9,6 +9,20 @@
 
 ---
 
+### Day 7 (2025.12.22) - 우선순위 큐 & 클래스 활용
+
+오늘은 큐의 심화 버전인 **PriorityQueue**와, 데이터를 객체로 묶어 관리하는 **Class 활용법**을 익혔다.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[더 맵게](https://school.programmers.co.kr/learn/courses/30/lessons/42626)** | [Link](./Day7/MoreSpicy.java) | `PriorityQueue` <br> 자동 정렬(최소 힙) 특성 활용. `peek()`로 조건 확인 후 `poll()` 2번 수행. |
+| Lv.2 | **[프로세스](https://school.programmers.co.kr/learn/courses/30/lessons/42587)** | [Link](./Day7/ProcessQueue.java) | `Queue` + `Custom Class` <br> 단순 `int`가 아니라 `Document` 객체를 만들어 인덱스와 값을 함께 관리함. |
+
+#### 💡 Today I Learned (TIL)
+1. **PriorityQueue의 위력:** `offer`할 때는 순서가 상관없지만, `poll`할 때는 무조건 **가장 작은 값**이 나온다. (최소 힙 구조)
+2. **객체 활용 (Relationship):** 큐에 단순히 숫자만 넣으면 위치 정보를 잃어버린다. `class Document { int idx; int priority; }` 처럼 객체로 포장해서 넣어야 상태를 기억할 수 있다.
+3. **로직 설계의 디테일:** `boolean flag`를 사용해 상태(나보다 센 놈이 있는가?)를 체크하고, `return`의 위치를 정확히 잡아야 로직이 꼬이지 않는다.
+
 ### Day 6 (2025.12.18) - 스택/큐 심화 (Stack & Queue Deep Dive)
 
 이전에 풀었던 문제들을 다시 점검하며, `Stack` 클래스 대신 `ArrayDeque`를 적용하고 로직의 오류(Concurrent Modification)를 개선하는 데 집중했다.
@@ -109,5 +123,3 @@
 1. **ArrayList 제거의 함정:** 숫자를 제거할 때 `remove(10)`을 하면 10번째 인덱스가 지워짐. 값을 지우려면 `remove(list.indexOf(10))` 처럼 인덱스를 찾아야 함.
 2. **Set의 위력:** 중복을 제거해야 할 때는 고민하지 말고 `HashSet`을 쓰자.
 3. **배열 반환 패턴:** `ArrayList`로 로직을 수행하고 마지막에 `new int[list.size()]`로 변환해서 리턴하는 패턴에 익숙해짐.
-
----
