@@ -9,6 +9,20 @@
 
 ---
 
+### Day 8 (2025.12.23) - 완전 탐색 (Brute Force)
+
+"컴퓨터의 빠른 계산 능력을 믿자." 모든 경우의 수를 확인하여 정답을 찾는 **완전 탐색** 기법을 연습했다.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.1 | **[모의고사](https://school.programmers.co.kr/learn/courses/30/lessons/42840)** | [Link](./Day8/MockExam.java) | `Modulo(%)` <br> `%` 연산자로 반복되는 패턴 구현. `ArrayList`를 활용해 동적 결과 담기. |
+| Lv.2 | **[카펫](https://school.programmers.co.kr/learn/courses/30/lessons/42842)** | [Link](./Day8/Carpet.java) | `Math Rule` <br> 약수(`width * height`) 탐색. 테두리 제외 공식 `(w-2)*(h-2) == yellow` 검증. |
+
+#### 💡 Today I Learned (TIL)
+1. **나머지 연산자(%):** 배열의 인덱스를 순환시킬 때(`i % length`) 가장 강력한 도구다.
+2. **ArrayList vs Array:** 결과의 개수를 모를 땐 `ArrayList`에 담고, 마지막에 `stream`이나 `loop`로 `int[]` 변환을 한다.
+3. **완전 탐색의 기본:** 복잡한 알고리즘을 고민하기 전에, **"가능한 범위를 루프로 다 돌려볼 수 있나?"** 먼저 생각하자. (컴퓨터는 생각보다 빠르다.)
+
 ### Day 7 (2025.12.22) - 우선순위 큐 & 클래스 활용
 
 오늘은 큐의 심화 버전인 **PriorityQueue**와, 데이터를 객체로 묶어 관리하는 **Class 활용법**을 익혔다.
