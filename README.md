@@ -9,6 +9,20 @@
 
 ---
 
+### Day 9 (2025.12.24) - 깊이 우선 탐색 (DFS)
+
+탐색 알고리즘의 핵심인 **DFS(Depth-First Search)**를 학습했다. "한 우물만 끝까지 판다"는 개념을 익히고, 이를 구현하는 **재귀(Recursion)** 패턴을 연습했다.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165)** | [Link](./Day9/TargetNumber.java) | `DFS(Recursion)` <br> 더하거나(+), 빼거나(-) 두 갈래 길로 재귀 호출. 끝까지 갔을 때(`index == length`) 타겟 확인. |
+| Lv.2 | **[피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946)** | [Link](./Day9/Fatigue.java) | `DFS` + `Backtracking` <br> 순열(Permutation)처럼 순서가 중요할 땐 `visited` 배열 사용. 들어갈 때 `true`, 나올 때 `false`가 핵심. |
+
+#### 💡 Today I Learned (TIL)
+1. **DFS의 공식:** DFS는 **재귀함수(Recursion)**다. "나와 똑같은 분신을 다음 단계로 보낸다"고 생각하자.
+2. **탈출 조건 (Base Case):** 재귀는 영원히 돌면 안 된다. 반드시 `if (index == 끝)` 같은 종료 조건이 맨 위에 있어야 한다.
+3. **백트래킹 (Backtracking):** `visited` 체크를 했다가, 재귀가 끝나고 돌아나올 때 다시 풀어주는(`false`) 기술. 그래야 다른 순서의 길도 탐색할 수 있다.
+
 ### Day 8 (2025.12.23) - 완전 탐색 (Brute Force)
 
 "컴퓨터의 빠른 계산 능력을 믿자." 모든 경우의 수를 확인하여 정답을 찾는 **완전 탐색** 기법을 연습했다.
