@@ -9,6 +9,14 @@
 
 ---
 
+### Day 11 (2025.12.29) - DFS vs BFS 실전 비교
+
+같은 문제를 두 가지 방식으로 모두 풀어보며 차이점을 명확히 정리했다.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.3 | **[네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)** | [DFS](./Day12/Network_dfs.java) <br> [BFS](./Day12/Network_bfs.java) | `DFS/BFS`, `Connected Component` <br> 연결된 덩어리(네트워크)의 개수를 세는 문제. **방문 체크(`visited`)**가 핵심이며, 재귀(DFS)와 큐(BFS) 구현 방식을 비교 학습함. |
+
 ### Day 10 (2025.12.26) - 너비 우선 탐색 (BFS)
 
 최단 거리 문제의 치트키, **BFS(Breadth-First Search)**를 학습했다. "가까운 곳부터 모두 방문하고 나아가는" 물결 같은 탐색 방식을 익혔다.
