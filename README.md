@@ -9,6 +9,15 @@
 
 ---
 
+### Day 14 (2026.01.02) - 정렬 심화 (Custom Sort)
+
+단순한 오름차순/내림차순을 넘어, **람다식(Lambda)**을 활용해 나만의 정렬 기준을 만드는 법을 익혔다.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[가장 큰 수](https://school.programmers.co.kr/learn/courses/30/lessons/42746)** | [Link](./Day14/BiggestNumber.java) | `Lambda`, `compareTo` <br> 숫자 크기가 아닌 **문자열 결합 순서**가 핵심. `(o2+o1).compareTo(o1+o2)`로 붙였을 때 더 큰 쪽을 우선순위로 둠. |
+| Lv.1 | **[문자열 내 마음대로 정렬하기](https://school.programmers.co.kr/learn/courses/30/lessons/12915)** | [Link](./Day14/StringCustomSort.java) | `Custom Sort` <br> 정렬 조건이 여러 개일 때(n번째 글자 -> 단어 전체) `if-else` 로직을 람다식 내부에 구현함. |
+
 ### Day 12 (2025.12.30) - 정렬 (Sort)
 
 가장 기본이 되는 알고리즘인 정렬을 학습했다. 자바의 내장 라이브러리를 활용하면 복잡한 구현 없이도 쉽게 문제를 해결할 수 있다.
