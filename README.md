@@ -9,6 +9,15 @@
 
 ---
 
+### Day 16 (2026.01.07) - 탐욕법 (Greedy)
+
+미래를 고려하지 않고, 현재 시점에서 가장 이득이 되는 선택을 반복하여 최적의 해를 찾는 알고리즘.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885)** | [Link](./Day16/Lifeboat.java) | `Two Pointers`, `Sorting` <br> 가장 무거운 사람과 가벼운 사람을 짝짓는 것이 이득. 정렬 후 양 끝에서 조여오는 방식 사용. |
+| Lv.2 | **[큰 수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883)** | [Link](./Day16/BigNumber.java) | `Greedy`, `StringBuilder` <br> 앞자리에 큰 수가 와야 전체가 커짐. **"내 앞의 숫자가 나보다 작으면 지운다"**는 규칙을 반복 적용. |
+
 ### Day 15 (2026.01.06) - 완전탐색 심화 (Brute Force)
 
 단순 반복문을 넘어, 수학적 공식을 세우거나 재귀함수(Recursion)를 이용해 모든 경우의 수를 만드는 심화 기법을 익혔다.
