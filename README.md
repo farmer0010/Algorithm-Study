@@ -8,6 +8,16 @@
 - **기간:** 2025.12.08 ~ (진행중)
 
 ---
+
+### Day 15 (2026.01.06) - 완전탐색 심화 (Brute Force)
+
+단순 반복문을 넘어, 수학적 공식을 세우거나 재귀함수(Recursion)를 이용해 모든 경우의 수를 만드는 심화 기법을 익혔다.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[카펫](https://school.programmers.co.kr/learn/courses/30/lessons/42842)** | [Link](./Day15/Carpet.java) | `Math Rule` <br> 전체 넓이의 약수를 구하고, **`(가로-2) * (세로-2) == yellow`** 공식을 통해 테두리와 알맹이의 관계를 검증함. |
+| Lv.2 | **[소수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/42839)** | [Link](./Day15/PrimeNumber.java) | `Recursion`, `HashSet` <br> 종이 조각을 붙여 숫자를 만드는 순열(Permutation) 구현. **`substring`**으로 사용한 카드를 제외하며 재귀 호출하는 로직이 핵심. |
+
 ### Day 14 (2026.01.05) - 완전탐색 (Brute Force)
 
 컴퓨터의 빠른 연산 능력을 이용해 모든 경우의 수를 확인하는 **완전탐색**의 기초를 다졌다. 요령을 피우기보다 **규칙을 찾아 반복문으로 해결**하는 것이 핵심이다.
