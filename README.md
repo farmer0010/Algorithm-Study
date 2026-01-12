@@ -9,6 +9,15 @@
 
 ---
 
+### Day 17 (2026.01.13) - 스택/큐 심화 (Simulation & Time)
+
+단순한 데이터 저장을 넘어, **시간의 흐름**을 큐(Queue)로 표현하거나 **과거의 시점**을 스택(Stack)으로 추적하는 심화 기법을 익혔다.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[다리를 지나는 트럭](https://school.programmers.co.kr/learn/courses/30/lessons/42583)** | [Link](./Day17/TruckBridge.java) | `Queue`, `Simulation` <br> 다리 위를 큐로 구현. 빈 공간을 **0(공기 트럭)**으로 채워 시간 흐름을 유지하고 무게를 관리함. |
+| Lv.2 | **[주식가격](https://school.programmers.co.kr/learn/courses/30/lessons/42584)** | [Link](./Day17/StockPrice.java) | `Stack` <br> 가격이 아닌 **시점(Index)**을 스택에 저장. 가격이 떨어지는 순간 `pop()`하여 **`현재 - 과거`**로 버틴 시간을 계산. |
+
 ### Day 16 (2026.01.07) - 탐욕법 (Greedy)
 
 미래를 고려하지 않고, 현재 시점에서 가장 이득이 되는 선택을 반복하여 최적의 해를 찾는 알고리즘.
