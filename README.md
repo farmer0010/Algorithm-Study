@@ -16,7 +16,7 @@
 | 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
 |:---:|:---|:---:|:---|
 | Lv.3 | **[입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238)** | [Link](./Day19/Immigration.java) | `Binary Search`, `Long` <br> 시간을 기준으로 **Up/Down**을 수행. 특정 시간(`mid`) 내에 처리가능한 인원수를 계산하여 범위를 좁힘. |
-
+| Lv.3 | **[징검다리 건너기](https://school.programmers.co.kr/learn/courses/30/lessons/64062)** | [Link](./Day19/SteppingStone.java) | `Parametric Search` <br> 인원수를 기준으로 **Up/Down** 수행. `mid`명이 건널 때 연속된 0인 돌(`skip`)이 `k` 이상이면 불가능 판단. |
 ### Day 18 (2026.01.14) - 수학 & 구현 (Math & Logic)
 
 복잡한 자료구조 없이, **수학적 규칙(짝수/홀수, 2로 나누기)**을 찾아내어 효율적으로 계산하는 사고력을 기름.

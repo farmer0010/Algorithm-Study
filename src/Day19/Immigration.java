@@ -2,7 +2,7 @@ package Day19;
 
 import java.util.Arrays;
 
-class Solution {
+class Immigration {
     public long solution(int n, int[] times) {
         // 1. 범위 설정 (최소 1분 ~ 최대 시간)
         Arrays.sort(times);
