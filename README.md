@@ -9,6 +9,15 @@
 
 ---
 
+### Day 18 (2026.01.14) - 수학 & 구현 (Math & Logic)
+
+복잡한 자료구조 없이, **수학적 규칙(짝수/홀수, 2로 나누기)**을 찾아내어 효율적으로 계산하는 사고력을 기름.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[예상 대진표](https://school.programmers.co.kr/learn/courses/30/lessons/12985)** | [Link](./Day18/ExpectedBracket.java) | `Math` <br> 토너먼트에서 다음 라운드 번호는 **`(n + 1) / 2`** 가 된다는 규칙을 발견하여 반복문으로 해결. |
+| Lv.2 | **[점프와 순간 이동](https://school.programmers.co.kr/learn/courses/30/lessons/12980)** | [Link](./Day18/JumpTeleport.java) | `Top-down`, `Modulo(%)` <br> 0 -> N으로 가는 것보다 **N -> 0으로 거꾸로 가는 것**이 훨씬 쉬움. 짝수면 `/2`(순간이동), 홀수면 `-1`(점프). |
+
 ### Day 17 (2026.01.13) - 스택/큐 심화 (Simulation & Time)
 
 단순한 데이터 저장을 넘어, **시간의 흐름**을 큐(Queue)로 표현하거나 **과거의 시점**을 스택(Stack)으로 추적하는 심화 기법을 익혔다.
