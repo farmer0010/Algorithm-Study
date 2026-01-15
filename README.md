@@ -9,6 +9,15 @@
 
 ---
 
+### Day 20 (2026.01.16) - 동적계획법 (Dynamic Programming)
+
+큰 문제를 작은 문제로 쪼개어 해결하고, 그 결과를 저장(**Memoization**)하여 중복 계산을 피하는 효율적인 알고리즘.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.3 | **[정수 삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105)** | [Link](./Day20/IntegerTriangle.java) | `DP`, `Math.max` <br> 위에서부터 내려오며 자신의 **왼쪽/오른쪽 부모 중 더 큰 값**을 선택해 누적 합을 구함. |
+| Lv.2 | **[땅따먹기](https://school.programmers.co.kr/learn/courses/30/lessons/12913)** | [Link](./Day20/Hopscotch.java) | `DP`, `Math.max` <br> **이전 행에서 같은 열을 제외**한 나머지 열 중 최댓값을 더해나가는 방식. `i=1`부터 시작하는 것이 핵심. |
+
 ### Day 19 (2026.01.15) - 이분 탐색 (Binary Search)
 
 정답의 범위를 좁혀가며 최적의 해를 찾는 **Up & Down 게임** 방식의 알고리즘.
