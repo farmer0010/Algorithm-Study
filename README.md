@@ -9,6 +9,15 @@
 
 ---
 
+### Day 21 (2026.01.19) - 해시 & 그리디 (Hash & Greedy)
+
+`HashMap`을 이용해 데이터의 빈도수를 세고, **종류(Key)**와 **개수(Value)**를 상황에 맞게 비교하는 훈련.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[귤 고르기](https://school.programmers.co.kr/learn/courses/30/lessons/138476)** | [Link](./Day21/Tangerine.java) | `HashMap`, `Sort` <br> 크기별 개수를 세고(`Map`), 개수가 많은 순(`Value 정렬`)으로 담아야 종류가 최소가 됨. |
+| Lv.2 | **[롤케이크 자르기](https://school.programmers.co.kr/learn/courses/30/lessons/132265)** | [Link](./Day21/Rollcake.java) | `Map vs Set` <br> 전체(`Map`)에서 하나씩 빼서 상대(`Set`)에게 줌. **0개가 된 Key를 `remove`**하여 `size()`(종류 수)를 비교하는 것이 핵심. |
+
 ### Day 20 (2026.01.16) - 동적계획법 (Dynamic Programming)
 
 큰 문제를 작은 문제로 쪼개어 해결하고, 그 결과를 저장(**Memoization**)하여 중복 계산을 피하는 효율적인 알고리즘.
