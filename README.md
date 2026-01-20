@@ -9,6 +9,22 @@
 
 ---
 
+### Day 22 (2026.01.20) - 힙 (Heap) & 우선순위 큐
+
+데이터가 추가될 때마다 자동으로 정렬을 유지하며, 최댓값이나 최솟값을 $O(\log N)$의 속도로 효율적으로 찾아내는 알고리즘.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.3 | **[야근 지수](https://school.programmers.co.kr/learn/courses/30/lessons/12927)** | [Link](./Day22/OvertimeIndex.java) | `PriorityQueue(Max)`, `Greedy` <br> 제곱의 합을 최소로 만들기 위해 **가장 큰 값**부터 줄임. `reverseOrder()`로 최대 힙 구현. |
+| Lv.3 | **[이중우선순위큐](https://school.programmers.co.kr/learn/courses/30/lessons/42628)** | [Link](./Day22/DualPriorityQueue.java) | `Dual PQ`, `remove()` <br> 최댓값/최솟값용 큐를 2개 운영. 한쪽 삭제 시 `remove`로 반대쪽 동기화하는 것이 핵심. |
+
+
+
+#### 💡 Today I Learned (TIL)
+1. **PriorityQueue의 방향성:** 자바의 기본 `PriorityQueue`는 최소 힙(Min Heap)이다. 최대 힙이 필요하면 `Collections.reverseOrder()`를 반드시 명시해야 한다.
+2. **peek()와 poll()의 용도:** 데이터를 실제로 삭제하며 가져올 때는 `poll()`, 삭제하지 않고 값만 확인할 때는 `peek()`를 사용해 데이터 파괴를 방지한다.
+3. **쌍권총 전략(Dual PQ):** 하나의 자료구조로 양쪽 끝(최대/최소)을 제어하기 힘들 때, 두 개의 큐를 동기화하여 관리하는 설계 패턴을 익혔다.
+
 ### Day 21 (2026.01.19) - 해시 & 그리디 (Hash & Greedy)
 
 `HashMap`을 이용해 데이터의 빈도수를 세고, **종류(Key)**와 **개수(Value)**를 상황에 맞게 비교하는 훈련.
