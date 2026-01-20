@@ -36,7 +36,7 @@ class DualPriorityQueue {
         if(minPQ.isEmpty())
             return new int[]{0,0};
         else {
-            return new int[]{minPQ.peek(), maxPQ.peek()};
+            return new int[]{maxPQ.peek(), minPQ.peek()};
         }
     }
 }
