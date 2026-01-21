@@ -9,6 +9,15 @@
 
 ---
 
+### Day 23 (2026.01.21) - 힙(Heap) & 시뮬레이션
+
+우선순위 큐를 활용해 '가장 큰 위기'를 막거나 '가장 효율적인 작업'을 선택하는 복합 시뮬레이션 구현.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[디펜스 게임](https://school.programmers.co.kr/learn/courses/30/lessons/142085)** | [Link](./Day23/DefenseGame.java) | `PriorityQueue(Max)`, `Greedy` <br> 일단 막고 나중에 무적권을 사용하는 **'사후 조치'** 전략. 지나간 라운드 중 최댓값을 복구함. |
+| Lv.3 | **[디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627)** | [Link](./Day23/DiskController.java) | `PriorityQueue(Min)`, `Simulation` <br> **SJF(Shortest Job First)** 스케줄링. 요청 시간순 정렬과 소요 시간순 정렬(Heap)을 조합해 평균 대기 시간을 최소화. |
+
 ### Day 22 (2026.01.20) - 힙 (Heap) & 우선순위 큐
 
 데이터가 추가될 때마다 자동으로 정렬을 유지하며, 최댓값이나 최솟값을 $O(\log N)$의 속도로 효율적으로 찾아내는 알고리즘.
