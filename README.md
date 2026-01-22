@@ -9,6 +9,15 @@
 
 ---
 
+### Day 24 (2026.01.22) - 문자열 처리 & 좌표 구현
+
+자료구조보다는 직관적인 논리와 구현력이 중요한 문제들. '불순물 제거'와 '발자국 기록' 패턴 학습.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[스킬트리](https://school.programmers.co.kr/learn/courses/30/lessons/49993)** | [Link](./Day24/SkillTree.java) | `String`, `indexOf` <br> 선행 스킬 외의 글자는 모두 제거(Filtering)한 뒤, 남은 문자열이 족보의 0번 인덱스부터 시작하는지 확인. |
+| Lv.2 | **[방문 길이](https://school.programmers.co.kr/learn/courses/30/lessons/49994)** | [Link](./Day24/VisitingLength.java) | `Implementation`, `HashSet` <br> 좌표 이동 시 **"A->B"**와 **"B->A"**를 모두 Set에 저장하여 중복된 길(Path) 방문을 방지. |
+
 ### Day 23 (2026.01.21) - 힙(Heap) & 시뮬레이션
 
 우선순위 큐를 활용해 '가장 큰 위기'를 막거나 '가장 효율적인 작업'을 선택하는 복합 시뮬레이션 구현.

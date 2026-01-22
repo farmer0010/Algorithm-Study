@@ -31,7 +31,6 @@ class DiskController {
             else
                 time = jobs[idx][0];
         }
-
         return answer / jobs.length;
     }
 }
