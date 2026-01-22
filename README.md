@@ -9,6 +9,15 @@
 
 ---
 
+### Day 25 (2026.01.23) - 이진수(Binary)와 API 활용
+
+자바의 내장 함수를 활용해 복잡한 이진수 변환과 비트 계산을 효율적으로 처리함.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[이진 변환 반복하기](https://school.programmers.co.kr/learn/courses/30/lessons/70129)** | [Link](./Day25/BinaryTransformation.java) | `Binary`, `String` <br> `Integer.toBinaryString(len)`: 길이를 이진수 문자열로 변환. <br> `replace("0", "")`로 0 제거 후 길이 차이 계산. |
+| Lv.2 | **[다음 큰 숫자](https://school.programmers.co.kr/learn/courses/30/lessons/12911)** | [Link](./Day25/NextBigNumber.java) | `Bit Count`, `Brute Force` <br> **`Integer.bitCount(n)`**: 이진수에서 1의 개수를 반환하는 치트키 함수. <br> 조건을 만족할 때까지 1씩 증가시키며 탐색. |
+
 ### Day 24 (2026.01.22) - 문자열 처리 & 좌표 구현
 
 자료구조보다는 직관적인 논리와 구현력이 중요한 문제들. '불순물 제거'와 '발자국 기록' 패턴 학습.
