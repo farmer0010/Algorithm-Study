@@ -9,6 +9,16 @@
 
 ---
 
+### Day 26 (2026.01.26) - 수학적 규칙과 문자열 파싱
+
+문자열을 숫자로 변환하여 대소 비교를 하거나, 유클리드 호제법을 이용해 GCD/LCM을 구하는 수학적 기초 문제 해결.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[최댓값과 최솟값](https://school.programmers.co.kr/learn/courses/30/lessons/12939)** | [Link](./Day26/MaxMin.java) | `String split`, `Parsing` <br> 공백으로 구분된 문자열을 `split`하여 배열로 만들고, `Integer.parseInt` 후 최소/최대 갱신. |
+| Lv.2 | **[N개의 최소공배수](https://school.programmers.co.kr/learn/courses/30/lessons/12953)** | [Link](./Day26/NLCM.java) | `GCD`, `LCM`, `Euclidean Algorithm` <br> 두 수의 최소공배수를 구한 뒤, 그 결과와 다음 수의 최소공배수를 구하는 과정을 반복(누적). |
+| Lv.1 | **[최대공약수와 최소공배수](https://school.programmers.co.kr/learn/courses/30/lessons/12940)** | [Link](./Day26/GCDLCM.java) | `Recursion` <br> **유클리드 호제법:** `gcd(b, a % b)` 재귀 호출로 최대공약수를 구하고, `(A * B) / GCD` 공식으로 최소공배수 도출. |
+
 ### Day 25 (2026.01.23) - 이진수(Binary)와 API 활용
 
 자바의 내장 함수를 활용해 복잡한 이진수 변환과 비트 계산을 효율적으로 처리함.
