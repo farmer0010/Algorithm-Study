@@ -9,6 +9,15 @@
 
 ---
 
+### Day 27 (2026.01.27) - 문자열 구현력과 완전탐색 설계
+
+복잡한 문자열 요구사항을 꼼꼼하게 구현하거나, 연속된 수의 합을 찾는 로직을 설계함.
+
+| 난이도 | 문제 이름 | 풀이 코드 | 키워드 / 핵심 정리 |
+|:---:|:---|:---:|:---|
+| Lv.2 | **[JadenCase 문자열 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12951)** | [Link](./Day27/JadenCase.java) | `String`, `Flag`, `StringBuilder` <br> 공백 처리가 핵심. `split`보다 한 글자씩 순회하며 `boolean flag`로 다음 글자의 대소문자 여부를 결정하는 것이 안전함. |
+| Lv.2 | **[숫자의 표현](https://school.programmers.co.kr/learn/courses/30/lessons/12924)** | [Link](./Day27/NumberExpression.java) | `Brute Force`, `Math` <br> 연속된 자연수의 합. 이중 반복문을 사용하되, 합이 타겟을 넘어가면 즉시 `break`하여 효율성 확보. (투 포인터로 최적화 가능) |
+
 ### Day 26 (2026.01.26) - 수학적 규칙과 문자열 파싱
 
 문자열을 숫자로 변환하여 대소 비교를 하거나, 유클리드 호제법을 이용해 GCD/LCM을 구하는 수학적 기초 문제 해결.
