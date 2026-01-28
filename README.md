@@ -9,6 +9,13 @@
 
 ---
 
+### Day 28 (2026.01.28) - 카카오 기출 (문자열 구현 끝판왕)
+
+| 난이도 | 문제 이름 | 핵심 정리 |
+|:---:|:---|:---|
+| Lv.2 | **[n진수 게임](https://school.programmers.co.kr/learn/courses/30/lessons/17687)** | `Integer.toString(num, n)`으로 진수 변환. <br> 전체 문자열을 `StringBuilder`로 먼저 다 만들고, 인덱스 규칙(`i += m`)으로 추출. |
+| Lv.2 | **[파일명 정렬](https://school.programmers.co.kr/learn/courses/30/lessons/17686)** | `Comparator` 커스텀 정렬. <br> 문자열 파싱은 **"인덱스(위치)"**를 먼저 찾고 `substring`으로 자르는 게 정신 건강에 이롭다. |
+
 ### Day 27 (2026.01.27) - 문자열 구현력과 완전탐색 설계
 
 복잡한 문자열 요구사항을 꼼꼼하게 구현하거나, 연속된 수의 합을 찾는 로직을 설계함.
