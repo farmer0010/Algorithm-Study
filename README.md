@@ -9,6 +9,13 @@
 
 ---
 
+### Day 29 (2026.01.30) - 고급 도구 장착 (다익스트라 & DP)
+
+| 난이도 | 문제 이름 | 핵심 정리 |
+|:---:|:---|:---|
+| Lv.2 | **[배달](https://school.programmers.co.kr/learn/courses/30/lessons/12978)** | **다익스트라(Dijkstra)** 알고리즘 입문. <br> 1. `dist` 배열을 무한대로 초기화. <br> 2. `PriorityQueue`로 가장 가까운 노드부터 탐색. <br> 3. `nextTime < dist[next]` 일 때만 갱신(Update)하고 큐에 넣는다. |
+| Lv.2 | **[2 x n 타일링](https://school.programmers.co.kr/learn/courses/30/lessons/12900)** | **DP (동적계획법)**. <br> 마지막 타일을 놓는 경우의 수(세로 1개 vs 가로 2개)를 생각하면 **피보나치 수열**(`dp[i] = dp[i-1] + dp[i-2]`)이 된다. <br> 숫자가 크므로 `%` 연산 필수. |
+
 ### Day 28 (2026.01.28) - 카카오 기출 (문자열 구현 끝판왕)
 
 | 난이도 | 문제 이름 | 핵심 정리 |
