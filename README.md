@@ -9,6 +9,15 @@
 
 ---
 
+### Day 33 (2026.02.07) - 완전 탐색 & 백트래킹: 컴퓨터를 믿어라
+
+모든 경우의 수를 다 확인하는 완전 탐색(Brute Force)과, 갔던 길을 되돌아오는 백트래킹(Backtracking) 학습.
+
+| 난이도 | 문제 이름 | 핵심 정리 |
+|:---:|:---|:---|
+| Lv.2 | **[피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946)** | **순열(Permutation) + DFS**. <br> 1. `visited` 배열로 방문 체크. <br> 2. 재귀 호출이 끝나면 `visited = false`로 되돌려(Backtracking) 다른 순서 탐색 가능하게 함. |
+| Lv.2 | **[전력망을 둘로 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/86971)** | **완전 탐색 + BFS**. <br> 1. 전선 하나를 끊음 (`map[a][b] = 0`). <br> 2. BFS로 한쪽 네트워크 송전탑 개수(`cnt`) 산출. <br> 3. 전선 복구 (`map[a][b] = 1`) 후 다음 전선으로 이동. |
+
 ### Day 32 (2026.02.06) - 그리디 (Greedy): 현재의 최선이 미래의 최선
 
 순간의 선택이 전체 결과에 영향을 미치는 탐욕법(Greedy) 알고리즘 학습. "기준(Criteria)"을 어떻게 세우느냐가 핵심.
