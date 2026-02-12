@@ -9,6 +9,15 @@
 
 ---
 
+### Day 36 (2026.02.12) - 구현력(Implementation) 끝판왕: 파싱과 해시맵
+
+복잡한 요구사항을 코드로 옮기는 '구현력' 집중 훈련. 문자열 파싱과 자료구조(Map) 활용 능력 강화.
+
+| 난이도 | 문제 이름 | 핵심 정리 |
+|:---:|:---|:---|
+| Lv.2 | **[k진수에서 소수 개수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/92335)** | **String Parsing & Math**. <br> 1. `split("0")`: 0을 기준으로 자르면 복잡한 소수 조건(0P0, P0 등)이 자동 해결됨. <br> 2. `Long.parseLong`: k진수로 변환하면 숫자가 매우 길어지므로 `long` 필수. <br> 3. 소수 판별: `Math.sqrt(n)`까지만 검사하여 효율성 확보 (`num % i == 0`). |
+| Lv.2 | **[주차 요금 계산](https://school.programmers.co.kr/learn/courses/30/lessons/92341)** | **Hash Map & Simulation**. <br> 1. **Two Maps Strategy**: `parkingMap`(입차 기록)과 `timeMap`(누적 시간) 분리 관리. <br> 2. **Helper Method**: 시간 문자열("HH:MM")을 분(min)으로 바꾸는 로직을 분리하여 가독성 확보. <br> 3. `Math.ceil`: `(double)` 캐스팅 없이 나누면 소수점이 버려지는 점 주의. |
+
 ### Day 35 (2026.02.10) - 구현력 강화: 문자열 파싱과 집합 (샌드박스 훈련 시작)
 
 힌트 없이 스스로 로직을 설계하는 **15분 샌드박스** 훈련 도입. 직관적인 아이디어를 코드로 옮기는 구현력 집중 연습.
