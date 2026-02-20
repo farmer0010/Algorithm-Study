@@ -9,6 +9,15 @@
 
 ---
 
+### Day 38 (2026.02.20) - 실무형 자료구조 (Map & LRU)
+
+상태 변화를 추적하고, 제한된 공간에서 데이터를 관리하는 실무 밀접형 로직 훈련.
+
+| 난이도 | 문제 이름 | 핵심 정리 |
+|:---:|:---|:---|
+| Lv.2 | **[오픈채팅방](https://school.programmers.co.kr/learn/courses/30/lessons/42888)** | **HashMap & Two-Pass 전략**. <br> 1. **1차 순회:** `Enter`, `Change` 이벤트 시 `map.put(id, nickname)`으로 최신 닉네임만 덮어쓰기. <br> 2. **2차 순회:** `Enter`, `Leave` 이벤트 시 `map.get(id)`로 최종 닉네임을 불러와 메시지 리스트(`ArrayList`) 생성. <br> 3. `Leave` 시에는 닉네임 배열(`words[2]`)이 없으므로 `IndexOutOfBounds` 주의. |
+| Lv.2 | **[[1차] 캐시](https://school.programmers.co.kr/learn/courses/30/lessons/17680)** | **LRU(Least Recently Used) 알고리즘 & List**. <br> 1. **예외 처리:** `cacheSize == 0`일 때는 캐시가 없으므로 무조건 `길이 * 5` 리턴. <br> 2. **Cache Hit:** 리스트에 존재하면 해당 요소를 `remove()`하고 다시 `add()`하여 **맨 뒤(최신)**로 보냄 (+1). <br> 3. **Cache Miss:** 리스트에 없고 꽉 찼다면(`size >= cacheSize`), **맨 앞(index 0, 가장 오래된 것)**을 `remove(0)`하고 새 요소를 맨 뒤에 `add()` (+5). <br> 4. `String` 불변성 주의: `city = city.toUpperCase();` 처럼 변수에 다시 담아줘야 함. |
+
 ### Day 37 (2026.02.19) - 두뇌 부팅: Set과 DP(규칙 찾기)
 
 연휴 복귀 후 가벼운 로직 설계 훈련. 중복 제거와 수열 규칙 발견 감각 회복.
