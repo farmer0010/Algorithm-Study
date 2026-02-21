@@ -9,6 +9,13 @@
 
 ---
 
+### Day 39 (2026.02.21) - 홈 오피스 코딩: 슬라이딩 윈도우 & 상태 관리
+
+| 난이도 | 문제 이름 | 핵심 정리 |
+|:---:|:---|:---|
+| Lv.2 | **[할인 행사](https://school.programmers.co.kr/learn/courses/30/lessons/131127)** | **HashMap & 슬라이딩 윈도우(Sliding Window)**. <br> 1. **타겟 세팅:** `want`와 `number` 배열을 묶어 기준이 되는 `mainMap` 생성. <br> 2. **윈도우 이동:** `discount` 배열을 0부터 `길이 - 10`까지 순회하며 10일 치 창문을 이동. <br> 3. **상태 초기화:** 매 반복마다 `subMap`을 새로 생성(`new HashMap<>()`)하여 이전 루프의 데이터 오염 방지. <br> 4. **비교 치트키:** `mainMap.equals(subMap)`을 사용하여 종류와 개수가 완벽히 일치하는지 한 번에 확인. |
+| Lv.2 | **[괄호 회전하기](https://school.programmers.co.kr/learn/courses/30/lessons/76502)** | **String(회전) & Stack(올바른 괄호) & 메서드 분리**. <br> 1. **문자열 회전:** `s.substring(1) + s.substring(0, 1)`을 통해 앞글자를 맨 뒤로 보내는 방식 사용. <br> 2. **메서드 분리(Refactoring):** 회전 로직과 괄호 검사 로직을 분리(`isValid` 메서드)하여 코드의 가독성을 높임. <br> 3. **Stack 짝꿍 검사:** 여는 괄호는 `push`, 닫는 괄호는 `peek()`으로 짝꿍(`()`, `{}`, `[]`)이 정확히 맞는지 확인 후 `pop()`. 비어있거나 짝이 다르면 `false` 반환. |
+
 ### Day 38 (2026.02.20) - 실무형 자료구조 (Map & LRU)
 
 상태 변화를 추적하고, 제한된 공간에서 데이터를 관리하는 실무 밀접형 로직 훈련.
