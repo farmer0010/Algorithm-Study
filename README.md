@@ -9,6 +9,15 @@
 
 ---
 
+### Day 40 (2026.02.23) - 정렬의 재발견 & 규칙 찾기
+
+배열을 직접 만들거나 이중 루프를 돌리면 터지는 효율성 문제들을 정렬(Sort), 해시(Hash), 그리고 수학적 규칙(Math)으로 우아하게 해결하는 훈련.
+
+| 난이도 | 문제 이름 | 핵심 정리 |
+|:---:|:---|:---|
+| Lv.2 | **[전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577)** | **Sort vs Hash 두 가지 풀이법**. <br> 1. **정렬(Sort) 풀이:** 문자열 배열을 `Arrays.sort()` 하면 비슷한 문자열이 인접하게 정렬됨. `phone_book[i+1].startsWith(phone_book[i])`로 바로 뒷사람과만 비교하여 O(N)으로 최적화. <br> 2. **해시(Hash) 풀이:** `HashSet`에 모든 번호를 넣고, 각 번호를 `substring`으로 쪼개가며 `set.contains(조각)`으로 접두어 존재 여부 확인. |
+| Lv.2 | **[n^2 배열 자르기](https://school.programmers.co.kr/learn/courses/30/lessons/87390)** | **Math & 규칙 찾기**. <br> 1. **메모리 초과 방지:** 크기가 최대 천만 단위인 배열을 실제로 생성하면 안 됨. <br> 2. **좌표 역추적:** 1차원 인덱스 `i`를 통해 2차원 좌표를 `row = (int)(i / n)`, `col = (int)(i % n)`으로 구함. <br> 3. **값 규칙:** 해당 칸에 들어가는 숫자는 `Math.max(row, col) + 1`. <br> 4. **자료형 주의:** `left`, `right`가 매우 크므로 순회 시 `long i`를 사용해야 하며, 형변환 캐스팅 위치 주의. |
+
 ### Day 39 (2026.02.21) - 홈 오피스 코딩: 슬라이딩 윈도우 & 상태 관리
 
 | 난이도 | 문제 이름 | 핵심 정리 |
