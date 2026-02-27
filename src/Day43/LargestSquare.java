@@ -16,7 +16,7 @@ package Day43;
 // 예외케이스 행과 열의 왼쪽 ,위쪽, 왼쪽위의 인덱스가 0이하로 떨어지
 // 지지않는 쪽에서만 작업하도록 해야할듯?
 
-class Solution
+class LargestSquare
 {
     public int solution(int [][]board)
     {
