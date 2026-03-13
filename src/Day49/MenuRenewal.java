@@ -48,6 +48,5 @@ class MenuRenewal {
         for(int j = i; j < order.length(); j++){
             dfs(order, current + order.charAt(j), j+1, courseLength);
         }
-
 }
 }
