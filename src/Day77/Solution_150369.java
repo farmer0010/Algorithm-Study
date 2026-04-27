@@ -35,7 +35,7 @@ class Solution_150369 {
         int deliver = 0;
         int pickup = 0;
 
-        for (int i = n-1; i > n; i--) {
+        for (int i = n-1; i >= 0; i--) {
             deliver += deliveries[i];
             pickup += pickups[i];
 
