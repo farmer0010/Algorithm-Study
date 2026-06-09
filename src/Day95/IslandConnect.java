@@ -27,7 +27,7 @@ package Day95;
 
 import java.util.Arrays;
 
-class Solution {
+class IslandConnect {
     int[] parent;
     public int solution(int n, int[][] costs) {
         int answer = 0;
