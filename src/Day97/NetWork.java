@@ -18,7 +18,7 @@ package Day97;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class NetWork {
     boolean[] visited;
     public int solution(int n, int[][] computers) {
         visited = new boolean[n];
