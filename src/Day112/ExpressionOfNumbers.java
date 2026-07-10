@@ -12,7 +12,7 @@ package Day112;
 // n은 총 10000개 이다 보니 직접 돌려봐도 안꺠지지 않을까?
 // 라는 생각이 조금은 드는 상태이고
 
-class Solution {
+class ExpressionOfNumbers {
     public int solution(int n) {
         int answer = 0;
 
