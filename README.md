@@ -9,6 +9,21 @@
 
 ---
 
+### Day 119 (2026.07.24) - 최단 경로(다익스트라) & 2단계 연속 BFS 집중 훈련
+
+단일 출발점 최단 경로 알고리즘인 다익스트라(Dijkstra)의 원리를 우회로 갱신 조건식으로 정밀하게 체화하고, 조건부 목적지가 존재하는 2차원 미로 탐색을 2단계 연속 BFS로 분할해 해결함.
+
+| 난이도 | 문제 이름 | 파일 이름 | 핵심 정리 |
+|:---:|:---|:---|:---|
+| Lv.2 | **[배달](https://school.programmers.co.kr/learn/courses/30/lessons/12978)** | `Delivery.java` | **PriorityQueue 기반 다익스트라(Dijkstra) 알고리즘**. <br> 1. 양방향 도로 가중치를 반영하기 위해 `ArrayList<ArrayList<Node>>` 인접 리스트 구축. <br> 2. `if (weight + next.weight < dist[next.to])` 조건을 통해 최단거리 우회로 발견 시 전광판 갱신 및 큐 대입. |
+| Lv.2 | **[미로 탈출](https://school.programmers.co.kr/learn/courses/30/lessons/159993)** | `EscapeMaze.java` | **2단계(S->L, L->E) 연속 2차원 BFS 탐색**. <br> 1. 레버를 거쳐야 하는 조건에 맞춰 탐색을 [시작->레버], [레버->출구] 두 구간으로 분할. <br> 2. 배열 경계선 검사(`newX`, `newY`)를 최우선 배치하여 인덱스 초과 에러 방지 및 도달 불가능(-1) 예외 처리. |
+
+#### 💡 Today I Learned (TIL)
+1. **다익스트라 Relaxation(갱신) 조건문:**
+   - `dist[next.to]`(기존 최단거리)와 `weight + next.weight`(현재 노드를 거치는 우회로)를 비교하여 더 적은 소요 시간이 나올 때만 갱신 및 큐 대입을 수행함을 완벽히 이해함.
+2. **2차원 배열 BFS 경계 검사 순서:**
+   - `maps[nx].charAt(ny)`와 같은 문자열 접근 연산 전에 반드시 `nx`, `ny`의 범위(`0 <= nx < rows`, `0 <= ny < cols`)를 검사해야 `IndexOutOfBoundsException`을 예방할 수 있음을 체득함.
+
 ### Day 118 (2026.07.23) - 그래프 탐색(BFS) 집중 훈련 (단어 변환 & 2차원 격자 탐색)
 
 1차원 단어간 최단 변환 경로 및 2차원 직사각형 지도의 연결 요소(무인도) 탐색을 너비 우선 탐색(BFS) 알고리즘으로 해결하며 탐색 피지컬과 경계 조건 검증 능력을 강화함.
