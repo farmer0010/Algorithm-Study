@@ -17,7 +17,7 @@ package Day127;
 // 그리고 어제 사용한 a -> b 이면 b -> c 이러한 추론을 사용해야함
 // 그 갯수가 (n-1)개의 도달되면 정확히 순위 매겨진 사람의 갯수가 나옴
 
-class Solution {
+class Ranking {
     public int solution(int n, int[][] results) {
         int k = results.length;
         int v = results[0].length;
