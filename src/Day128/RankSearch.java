@@ -19,7 +19,7 @@ package Day128;
 
 import java.util.*;
 
-class Solution {
+class RankSearch {
     public int[] solution(String[] info, String[] query) {
 
         int[] answer = new int[query.length];
