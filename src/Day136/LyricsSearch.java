@@ -28,7 +28,7 @@ package Day136;
 
 import java.util.*;
 
-class Solution {
+class LyricsSearch {
     class Node {
         Map<Character, Node> children = new HashMap<>();
         Map<Integer, Integer> count = new HashMap<>();
